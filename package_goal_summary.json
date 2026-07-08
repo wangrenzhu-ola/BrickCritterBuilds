@@ -1,7 +1,7 @@
 {
   "schema_version": "appfactory.package_goal_summary.v1",
   "app_name": "BrickCritter Builds",
-  "worker_status": "github_pushed_pending_finalgate",
+  "worker_status": "repo_ready_for_business_patch",
   "applied_skill_ids": [
     "build-ios-apps",
     "test-xcode",
@@ -42,5 +42,8 @@
   "known_gaps": [],
   "blockers": [],
   "repo_url": "https://github.com/wangrenzhu-ola/BrickCritterBuilds",
-  "github_public_repo_url": "https://github.com/wangrenzhu-ola/BrickCritterBuilds"
+  "github_public_repo_url": "https://github.com/wangrenzhu-ola/BrickCritterBuilds",
+  "real_acceptance_report_ref": "/Users/wangrenzhu/work/BrickCritterBuilds/evidence/real_acceptance_report.json",
+  "real_acceptance_status": "repo_ready_for_business_patch",
+  "finalgate_required_by_current_amendment": false
 }
