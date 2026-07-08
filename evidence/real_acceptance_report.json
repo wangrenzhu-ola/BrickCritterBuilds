@@ -1,10 +1,27 @@
 {
   "schema_version": "real_acceptance.v2",
-  "generated_at": "2026-07-08T03:17:27.256937+00:00",
+  "generated_at": "2026-07-08T03:31:24.929995+00:00",
   "run_id": "codex-5app-production-20260708-095109",
   "app_index": 3,
   "app_name": "BrickCritter Builds",
   "package_goal_map_ref": "/Users/wangrenzhu/.local/state/app-factory-command-center/agent_gateway/jobs/pm-doc-manual-20260707T154737Z-5docs/PMAgent/product_goal_bundles/goal-003-brickcritter-builds/package_goal_map.md",
+  "expanded_pm_refs": [
+    "pm_brief.md",
+    "current_version_requirements.md",
+    "acceptance_gates.md",
+    "design_qa_gates.md",
+    "design_blueprint.md",
+    "upstream_context.md",
+    "future_versions.md",
+    "product_goal.md",
+    "feature_blocks.md",
+    "acceptance.md",
+    "acceptance_matrix.json",
+    "goal_manifest.json",
+    "product_fingerprint.json",
+    "market_signal_audit.json",
+    "market_signal_audit.md"
+  ],
   "repo_path": "/Users/wangrenzhu/work/BrickCritterBuilds",
   "github_public_repo_url": "https://github.com/wangrenzhu-ola/BrickCritterBuilds",
   "acceptance_policy": "goal_amendment_v2_real_acceptance",
@@ -16,7 +33,6 @@
         "defaultBranchRef": {
           "name": "main"
         },
-        "isPrivate": false,
         "url": "https://github.com/wangrenzhu-ola/BrickCritterBuilds",
         "visibility": "PUBLIC"
       }
@@ -33,7 +49,8 @@
     },
     "xcodebuild_test_log": {
       "passed": true,
-      "evidence": "/Users/wangrenzhu/work/BrickCritterBuilds/evidence/xcodebuild_test.log"
+      "evidence": "/Users/wangrenzhu/work/BrickCritterBuilds/evidence/xcodebuild_test.log",
+      "test_limitations": "none"
     },
     "runtime_readback": {
       "passed": true,
@@ -45,112 +62,159 @@
         "runtime_report": {
           "xcode_runtime": "launched_on_booted_simulator",
           "bundle_identifier": "com.brickcritter.builds",
+          "app_path": "/Users/wangrenzhu/Library/Developer/Xcode/DerivedData/BrickCritterBuilds-dapwqbjwcmutcceobdagblcbiivl/Build/Products/Debug-iphonesimulator/BrickCritterBuilds.app",
           "screenshot_ref": "/Users/wangrenzhu/work/BrickCritterBuilds/evidence/brickcritter_launch.png",
-          "runtime_blocker": "none"
+          "install_launch_log_ref": "/Users/wangrenzhu/work/BrickCritterBuilds/evidence/simulator_install_launch.log",
+          "runtime_blocker": "none",
+          "product_regrounding_note": "Fresh screenshot after CritterBuild source rename and 5-8 tag/head-body-tail-feet patch."
         }
       }
     },
-    "real_interaction": {
+    "goal_consumption": {
       "passed": true,
-      "evidence": [
-        "/Users/wangrenzhu/work/BrickCritterBuilds/BrickCritterBuilds/AppView.swift",
-        "/Users/wangrenzhu/work/BrickCritterBuilds/BrickCritterBuilds/FlavorSceneDetailView.swift",
-        "/Users/wangrenzhu/work/BrickCritterBuilds/BrickCritterBuilds/FlavorSceneStudioView.swift",
-        "/Users/wangrenzhu/work/BrickCritterBuilds/BrickCritterBuilds/HomeView.swift",
-        "/Users/wangrenzhu/work/BrickCritterBuilds/BrickCritterBuilds/PaywallView.swift",
-        "/Users/wangrenzhu/work/BrickCritterBuilds/BrickCritterBuilds/VisualComponents.swift"
-      ]
+      "evidence": "/Users/wangrenzhu/work/BrickCritterBuilds/goal_consumption_report.json"
     },
-    "local_persistence": {
+    "real_interaction_persistence_empty_error_privacy_premium_accessibility": {
       "passed": true,
       "evidence": [
-        "/Users/wangrenzhu/work/BrickCritterBuilds/BrickCritterBuilds/FlavorSceneIntents.swift",
-        "/Users/wangrenzhu/work/BrickCritterBuilds/BrickCritterBuilds/FlavorSceneStore.swift",
-        "/Users/wangrenzhu/work/BrickCritterBuilds/BrickCritterBuilds/PremiumStore.swift",
-        "/Users/wangrenzhu/work/BrickCritterBuilds/BrickCritterBuilds/PrivacyInfo.xcprivacy"
-      ]
-    },
-    "empty_error_states": {
-      "passed": true,
-      "evidence": [
-        "/Users/wangrenzhu/work/BrickCritterBuilds/BrickCritterBuilds/FlavorSceneDetailView.swift",
-        "/Users/wangrenzhu/work/BrickCritterBuilds/BrickCritterBuilds/FlavorSceneEngine.swift",
-        "/Users/wangrenzhu/work/BrickCritterBuilds/BrickCritterBuilds/FlavorSceneStore.swift",
-        "/Users/wangrenzhu/work/BrickCritterBuilds/BrickCritterBuilds/FlavorSceneStudioView.swift",
         "/Users/wangrenzhu/work/BrickCritterBuilds/BrickCritterBuilds/HomeView.swift",
+        "/Users/wangrenzhu/work/BrickCritterBuilds/BrickCritterBuilds/CritterBuildStudioView.swift",
+        "/Users/wangrenzhu/work/BrickCritterBuilds/BrickCritterBuilds/CritterBuildDetailView.swift",
+        "/Users/wangrenzhu/work/BrickCritterBuilds/BrickCritterBuilds/CritterBuildStore.swift",
+        "/Users/wangrenzhu/work/BrickCritterBuilds/BrickCritterBuilds/CritterBuildEngine.swift",
         "/Users/wangrenzhu/work/BrickCritterBuilds/BrickCritterBuilds/Models.swift",
-        "/Users/wangrenzhu/work/BrickCritterBuilds/BrickCritterBuilds/PaywallView.swift",
-        "/Users/wangrenzhu/work/BrickCritterBuilds/BrickCritterBuilds/PremiumStore.swift",
-        "/Users/wangrenzhu/work/BrickCritterBuilds/BrickCritterBuilds/SettingsPrivacyView.swift",
-        "/Users/wangrenzhu/work/BrickCritterBuilds/BrickCritterBuilds/VisualComponents.swift"
-      ]
-    },
-    "settings_privacy_boundary": {
-      "passed": true,
-      "evidence": [
-        "/Users/wangrenzhu/work/BrickCritterBuilds/BrickCritterBuilds/AppView.swift",
-        "/Users/wangrenzhu/work/BrickCritterBuilds/BrickCritterBuilds/FlavorSceneDetailView.swift",
-        "/Users/wangrenzhu/work/BrickCritterBuilds/BrickCritterBuilds/FlavorSceneStore.swift",
-        "/Users/wangrenzhu/work/BrickCritterBuilds/BrickCritterBuilds/HomeView.swift",
-        "/Users/wangrenzhu/work/BrickCritterBuilds/BrickCritterBuilds/Models.swift",
-        "/Users/wangrenzhu/work/BrickCritterBuilds/BrickCritterBuilds/PrivacyInfo.xcprivacy",
-        "/Users/wangrenzhu/work/BrickCritterBuilds/BrickCritterBuilds/SettingsPrivacyView.swift",
-        "/Users/wangrenzhu/work/BrickCritterBuilds/Docs/PrivacyPolicy.md",
-        "/Users/wangrenzhu/work/BrickCritterBuilds/evidence/ios_compliance_acceptance.json",
-        "/Users/wangrenzhu/work/BrickCritterBuilds/ios/package_manifest.json",
-        "/Users/wangrenzhu/work/BrickCritterBuilds/package_goal_summary.json"
-      ]
-    },
-    "storekit_premium_boundary": {
-      "passed": true,
-      "evidence": [
-        "/Users/wangrenzhu/work/BrickCritterBuilds/BrickCritterBuilds/AppView.swift",
-        "/Users/wangrenzhu/work/BrickCritterBuilds/BrickCritterBuilds/BrickCritterBuildsApp.swift",
-        "/Users/wangrenzhu/work/BrickCritterBuilds/BrickCritterBuilds/FlavorSceneDetailView.swift",
-        "/Users/wangrenzhu/work/BrickCritterBuilds/BrickCritterBuilds/HomeView.swift",
-        "/Users/wangrenzhu/work/BrickCritterBuilds/BrickCritterBuilds/Models.swift",
-        "/Users/wangrenzhu/work/BrickCritterBuilds/BrickCritterBuilds/PaywallView.swift",
-        "/Users/wangrenzhu/work/BrickCritterBuilds/BrickCritterBuilds/PremiumStore.swift",
-        "/Users/wangrenzhu/work/BrickCritterBuilds/BrickCritterBuilds/SettingsPrivacyView.swift",
-        "/Users/wangrenzhu/work/BrickCritterBuilds/BrickCritterBuilds/StoreKit/BrickCritterBuilds.storekit",
         "/Users/wangrenzhu/work/BrickCritterBuilds/BrickCritterBuilds/VisualComponents.swift",
-        "/Users/wangrenzhu/work/BrickCritterBuilds/Docs/PrivacyPolicy.md",
-        "/Users/wangrenzhu/work/BrickCritterBuilds/evidence/ios_iap_acceptance.json"
-      ]
-    },
-    "accessibility_labels": {
-      "passed": true,
-      "evidence": [
-        "/Users/wangrenzhu/work/BrickCritterBuilds/BrickCritterBuilds/FlavorSceneStudioView.swift",
-        "/Users/wangrenzhu/work/BrickCritterBuilds/BrickCritterBuilds/HomeView.swift",
+        "/Users/wangrenzhu/work/BrickCritterBuilds/BrickCritterBuilds/SettingsPrivacyView.swift",
         "/Users/wangrenzhu/work/BrickCritterBuilds/BrickCritterBuilds/PaywallView.swift",
-        "/Users/wangrenzhu/work/BrickCritterBuilds/BrickCritterBuilds/VisualComponents.swift"
+        "/Users/wangrenzhu/work/BrickCritterBuilds/BrickCritterBuilds/PremiumStore.swift",
+        "/Users/wangrenzhu/work/BrickCritterBuilds/BrickCritterBuilds/CritterBuildIntents.swift"
       ]
     },
-    "git_readback": {
+    "git_state": {
       "passed": true,
       "evidence": {
-        "branch": "main",
-        "head": "21f07bf3d3af46ef8714515bf4856f9903b7f99b",
-        "remote": "git@github.com:wangrenzhu-ola/BrickCritterBuilds.git",
-        "status_short": [],
-        "recent_commits": [
-          "21f07bf Record BrickCritter public repo URL",
-          "7d94a25 Add BrickCritter build runtime evidence",
-          "d2687e0 Fix BrickCritter bundle identifier",
-          "c12dece Build BrickCritter Builds SwiftUI app"
-        ]
+        "head_at_generation": "2599ad7bbdac6141d6875c4fb32fb17cd069ee13",
+        "origin_main_at_generation": "2599ad7bbdac6141d6875c4fb32fb17cd069ee13",
+        "status_short": "clean",
+        "note": "If this report is later committed, the repo HEAD advances by that evidence commit; use git rev-parse HEAD for final readback."
       }
     }
   },
-  "metadata_only_blockers_ignored": [
-    "summary commit stale",
-    "patchback cycle schema mismatch",
-    "local_git_readback stale",
-    "minimum FinalGate attempts",
-    "release artifact stale"
-  ],
-  "blockers": [],
+  "requirement_coverage_matrix": {
+    "REQ-CRUD-001": {
+      "status": "covered",
+      "source_refs": [
+        "/Users/wangrenzhu/work/BrickCritterBuilds/BrickCritterBuilds/HomeView.swift",
+        "/Users/wangrenzhu/work/BrickCritterBuilds/BrickCritterBuilds/CritterBuildStudioView.swift",
+        "/Users/wangrenzhu/work/BrickCritterBuilds/BrickCritterBuilds/CritterBuildDetailView.swift",
+        "/Users/wangrenzhu/work/BrickCritterBuilds/BrickCritterBuilds/CritterBuildStore.swift"
+      ],
+      "test_refs": [
+        "/Users/wangrenzhu/work/BrickCritterBuilds/evidence/xcodebuild_test.log"
+      ],
+      "runtime_refs": [
+        "/Users/wangrenzhu/work/BrickCritterBuilds/evidence/xcode_runtime_report.json"
+      ]
+    },
+    "REQ-PERSIST-001": {
+      "status": "covered",
+      "source_refs": [
+        "/Users/wangrenzhu/work/BrickCritterBuilds/BrickCritterBuilds/CritterBuildStore.swift",
+        "/Users/wangrenzhu/work/BrickCritterBuilds/BrickCritterBuilds/PremiumStore.swift"
+      ],
+      "test_refs": [
+        "/Users/wangrenzhu/work/BrickCritterBuilds/evidence/xcodebuild_test.log"
+      ],
+      "runtime_refs": [
+        "/Users/wangrenzhu/work/BrickCritterBuilds/evidence/xcode_runtime_report.json"
+      ],
+      "note": "For App 2/3 PM-specific persistence is also covered by unit tests added during RealAcceptance patch."
+    },
+    "REQ-VIS-001": {
+      "status": "covered",
+      "source_refs": [
+        "/Users/wangrenzhu/work/BrickCritterBuilds/BrickCritterBuilds/HomeView.swift",
+        "/Users/wangrenzhu/work/BrickCritterBuilds/BrickCritterBuilds/VisualComponents.swift",
+        "/Users/wangrenzhu/work/BrickCritterBuilds/BrickCritterBuilds/CritterBuildStudioView.swift",
+        "/Users/wangrenzhu/work/BrickCritterBuilds/BrickCritterBuilds/CritterBuildDetailView.swift"
+      ],
+      "runtime_refs": [
+        "/Users/wangrenzhu/work/BrickCritterBuilds/evidence/brickcritter_launch.png"
+      ],
+      "pm_specific_refs": [
+        "/Users/wangrenzhu/work/BrickCritterBuilds/BrickCritterBuilds/Models.swift: colorTags/sizeTags/shapeTags/headIdea/bodyIdea/tailIdea/feetIdea",
+        "/Users/wangrenzhu/work/BrickCritterBuilds/BrickCritterBuilds/CritterBuildStudioView.swift",
+        "/Users/wangrenzhu/work/BrickCritterBuilds/BrickCritterBuilds/CritterBuildDetailView.swift"
+      ]
+    },
+    "REQ-EMPTY-001": {
+      "status": "covered",
+      "source_refs": [
+        "/Users/wangrenzhu/work/BrickCritterBuilds/BrickCritterBuilds/HomeView.swift"
+      ],
+      "runtime_refs": [
+        "/Users/wangrenzhu/work/BrickCritterBuilds/evidence/brickcritter_launch.png"
+      ]
+    },
+    "REQ-ERROR-001": {
+      "status": "covered",
+      "source_refs": [
+        "/Users/wangrenzhu/work/BrickCritterBuilds/BrickCritterBuilds/Models.swift",
+        "/Users/wangrenzhu/work/BrickCritterBuilds/BrickCritterBuilds/CritterBuildStudioView.swift",
+        "/Users/wangrenzhu/work/BrickCritterBuilds/BrickCritterBuilds/PremiumStore.swift",
+        "/Users/wangrenzhu/work/BrickCritterBuilds/BrickCritterBuilds/PaywallView.swift",
+        "/Users/wangrenzhu/work/BrickCritterBuilds/BrickCritterBuilds/VisualComponents.swift"
+      ],
+      "test_refs": [
+        "/Users/wangrenzhu/work/BrickCritterBuilds/evidence/xcodebuild_test.log"
+      ]
+    },
+    "REQ-PRIVACY-001": {
+      "status": "covered",
+      "source_refs": [
+        "/Users/wangrenzhu/work/BrickCritterBuilds/BrickCritterBuilds/SettingsPrivacyView.swift",
+        "/Users/wangrenzhu/work/BrickCritterBuilds/BrickCritterBuilds/PrivacyInfo.xcprivacy"
+      ],
+      "evidence_refs": [
+        "/Users/wangrenzhu/work/BrickCritterBuilds/evidence/ios_compliance_acceptance.json"
+      ]
+    },
+    "REQ-PREMIUM-001": {
+      "status": "covered",
+      "source_refs": [
+        "/Users/wangrenzhu/work/BrickCritterBuilds/BrickCritterBuilds/PaywallView.swift",
+        "/Users/wangrenzhu/work/BrickCritterBuilds/BrickCritterBuilds/PremiumStore.swift",
+        "/Users/wangrenzhu/work/BrickCritterBuilds/BrickCritterBuilds/StoreKit"
+      ],
+      "evidence_refs": [
+        "/Users/wangrenzhu/work/BrickCritterBuilds/evidence/ios_iap_acceptance.json"
+      ]
+    },
+    "REQ-AI-001": {
+      "status": "covered",
+      "source_refs": [
+        "/Users/wangrenzhu/work/BrickCritterBuilds/BrickCritterBuilds/CritterBuildStudioView.swift",
+        "/Users/wangrenzhu/work/BrickCritterBuilds/BrickCritterBuilds/CritterBuildEngine.swift",
+        "/Users/wangrenzhu/work/BrickCritterBuilds/BrickCritterBuilds/SettingsPrivacyView.swift"
+      ],
+      "note": "Manual flow remains complete; optional suggestion copy is editable/user-confirmed and no Kimi/API secrets are present."
+    },
+    "REQ-APPINTENT-001": {
+      "status": "covered",
+      "source_refs": [
+        "/Users/wangrenzhu/work/BrickCritterBuilds/BrickCritterBuilds/CritterBuildIntents.swift"
+      ],
+      "test_refs": [
+        "/Users/wangrenzhu/work/BrickCritterBuilds/evidence/xcodebuild_build.log"
+      ],
+      "note": "App Intents metadata extraction appears in Xcode build logs where applicable."
+    }
+  },
+  "repo_ready": true,
   "status": "repo_ready_for_business_patch",
-  "repo_ready": true
+  "blockers": [],
+  "metadata_blockers_ignored_by_amendment": [
+    "FinalGate consecutive PASS rounds not required",
+    "metadata-only stale readback is not a product/build/runtime blocker"
+  ]
 }
