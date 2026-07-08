@@ -53,8 +53,9 @@ struct CritterBuildCard: View {
             HStack { Text(record.title).font(.headline); Spacer(); CueBadge(cue: record.cue) }
             Text(record.cueReason).font(.subheadline).foregroundStyle(.secondary)
             HStack {
-                Label(record.critterStyle.rawValue, systemImage: "pawprint")
-                Label(record.observation.rawValue, systemImage: "eye")
+                Label(record.colorTags, systemImage: "paintpalette")
+                Label(record.sizeTags, systemImage: "square.grid.3x3")
+                Label(record.shapeTags, systemImage: "shippingbox")
             }.font(.caption).foregroundStyle(.secondary)
         }
         .padding()

@@ -10,6 +10,13 @@ struct CritterBuildRecord: Identifiable, Codable, Hashable {
     var hingePieces: Double
     var oddPieces: Double
     var observation: ObservationType
+    var colorTags: String
+    var sizeTags: String
+    var shapeTags: String
+    var headIdea: String
+    var bodyIdea: String
+    var tailIdea: String
+    var feetIdea: String
     var careNote: String
     var cue: BuildCue
     var cueReason: String
@@ -75,6 +82,13 @@ struct CritterBuildDraft: Codable, Hashable {
     var hingePieces: Double
     var oddPieces: Double
     var observation: ObservationType
+    var colorTags: String
+    var sizeTags: String
+    var shapeTags: String
+    var headIdea: String
+    var bodyIdea: String
+    var tailIdea: String
+    var feetIdea: String
     var careNote: String
     var lastGeneratedCue: BuildCue?
     var lastGeneratedReason: String?
@@ -88,6 +102,13 @@ struct CritterBuildDraft: Codable, Hashable {
         hingePieces: 4.0,
         oddPieces: 2.0,
         observation: .standsUpright,
+        colorTags: "green, amber, white",
+        sizeTags: "1x1, 1x2, 2x2, slope, hinge",
+        shapeTags: "round eyes, wedge back, clip tail",
+        headIdea: "Round eye bricks and a wedge snout",
+        bodyIdea: "2x2 core with slope shoulders",
+        tailIdea: "Clip tail or hinge tail for character",
+        feetIdea: "Four 1x2 plates widened under the body",
         careNote: "",
         lastGeneratedCue: nil,
         lastGeneratedReason: nil
@@ -102,12 +123,19 @@ struct CritterBuildDraft: Codable, Hashable {
         hingePieces = record.hingePieces
         oddPieces = record.oddPieces
         observation = record.observation
+        colorTags = record.colorTags
+        sizeTags = record.sizeTags
+        shapeTags = record.shapeTags
+        headIdea = record.headIdea
+        bodyIdea = record.bodyIdea
+        tailIdea = record.tailIdea
+        feetIdea = record.feetIdea
         careNote = record.careNote
         lastGeneratedCue = record.cue
         lastGeneratedReason = record.cueReason
     }
 
-    init(id: UUID?, title: String, critterStyle: CritterStyle, readingMode: ReadingMode, smallBricks: Double, hingePieces: Double, oddPieces: Double, observation: ObservationType, careNote: String, lastGeneratedCue: BuildCue?, lastGeneratedReason: String?) {
+    init(id: UUID?, title: String, critterStyle: CritterStyle, readingMode: ReadingMode, smallBricks: Double, hingePieces: Double, oddPieces: Double, observation: ObservationType, colorTags: String, sizeTags: String, shapeTags: String, headIdea: String, bodyIdea: String, tailIdea: String, feetIdea: String, careNote: String, lastGeneratedCue: BuildCue?, lastGeneratedReason: String?) {
         self.id = id
         self.title = title
         self.critterStyle = critterStyle
@@ -116,6 +144,13 @@ struct CritterBuildDraft: Codable, Hashable {
         self.hingePieces = hingePieces
         self.oddPieces = oddPieces
         self.observation = observation
+        self.colorTags = colorTags
+        self.sizeTags = sizeTags
+        self.shapeTags = shapeTags
+        self.headIdea = headIdea
+        self.bodyIdea = bodyIdea
+        self.tailIdea = tailIdea
+        self.feetIdea = feetIdea
         self.careNote = careNote
         self.lastGeneratedCue = lastGeneratedCue
         self.lastGeneratedReason = lastGeneratedReason

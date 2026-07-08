@@ -18,6 +18,7 @@
   "repo_path": "/Users/wangrenzhu/work/BrickCritterBuilds",
   "xcodeproj_ref": "/Users/wangrenzhu/work/BrickCritterBuilds/BrickCritterBuilds.xcodeproj",
   "commit_refs": [
+    "7baf2b8 Re-ground BrickCritter source and evidence to PM goal",
     "42ad1a5 Record RealAcceptance v2 repo-ready evidence",
     "21f07bf Record BrickCritter public repo URL",
     "7d94a25 Add BrickCritter build runtime evidence",
@@ -29,6 +30,7 @@
   ],
   "test_xcode_evidence_refs": [
     "/Users/wangrenzhu/work/BrickCritterBuilds/evidence/xcodebuild_test.log",
+    "/Users/wangrenzhu/work/BrickCritterBuilds/evidence/simulator_install_launch.log",
     "/Users/wangrenzhu/work/BrickCritterBuilds/evidence/brickcritter_launch.png"
   ],
   "xcode_runtime_result_ref": "/Users/wangrenzhu/work/BrickCritterBuilds/evidence/xcode_runtime_report.json",
@@ -49,5 +51,5 @@
   "real_acceptance_report_ref": "/Users/wangrenzhu/work/BrickCritterBuilds/evidence/real_acceptance_report.json",
   "real_acceptance_status": "repo_ready_for_business_patch",
   "finalgate_required_by_current_amendment": false,
-  "source_regrounding_note": "Renamed cloned FlavorScene source/test files to CritterBuild names and removed ZeroProof/flavor/drink/guest residue from user-visible copy before RealAcceptance."
+  "source_regrounding_note": "Patched to PM-required brick tag flow: 5-8 color/size/shape tag fields plus head/body/tail/feet build-card suggestions are modelled, editable, saved, exported, tested, and visible."
 }

@@ -51,6 +51,13 @@ final class CritterBuildStore: ObservableObject {
             hingePieces: incoming.hingePieces,
             oddPieces: incoming.oddPieces,
             observation: incoming.observation,
+            colorTags: incoming.colorTags,
+            sizeTags: incoming.sizeTags,
+            shapeTags: incoming.shapeTags,
+            headIdea: incoming.headIdea,
+            bodyIdea: incoming.bodyIdea,
+            tailIdea: incoming.tailIdea,
+            feetIdea: incoming.feetIdea,
             careNote: incoming.careNote,
             cue: evaluation.cue,
             cueReason: evaluation.reason,
@@ -73,7 +80,13 @@ final class CritterBuildStore: ObservableObject {
     }
 
     func exportText(for record: CritterBuildRecord) -> String {
-        "\(record.title) — \(record.cue.rawValue): \(record.cueReason)"
+        """
+        \(record.title) — \(record.cue.rawValue): \(record.cueReason)
+        Color tags: \(record.colorTags)
+        Size tags: \(record.sizeTags)
+        Shape tags: \(record.shapeTags)
+        Head/body/tail/feet: \(record.headIdea); \(record.bodyIdea); \(record.tailIdea); \(record.feetIdea)
+        """
     }
 
     private func load() {

@@ -41,6 +41,20 @@ struct CritterBuildStudioView: View {
                     Text("Manual not-built-yet state keeps the Critter Build editable and reminds you to test the creature stance before saving.")
                 }
             }
+            Section("5–8 brick tags") {
+                TextField("Color tags", text: $draft.colorTags, axis: .vertical)
+                    .accessibilityLabel("Critter Build color tags")
+                TextField("Size tags", text: $draft.sizeTags, axis: .vertical)
+                    .accessibilityLabel("Critter Build size tags")
+                TextField("Shape tags", text: $draft.shapeTags, axis: .vertical)
+                    .accessibilityLabel("Critter Build shape tags")
+            }
+            Section("Head / body / tail / feet build card") {
+                TextField("Head idea", text: $draft.headIdea, axis: .vertical)
+                TextField("Body idea", text: $draft.bodyIdea, axis: .vertical)
+                TextField("Tail idea", text: $draft.tailIdea, axis: .vertical)
+                TextField("Feet idea", text: $draft.feetIdea, axis: .vertical)
+            }
             Section("Critter posture observation") {
                 Picker("Observation", selection: $draft.observation) {
                     ForEach(ObservationType.allCases) { Text($0.rawValue).tag($0) }

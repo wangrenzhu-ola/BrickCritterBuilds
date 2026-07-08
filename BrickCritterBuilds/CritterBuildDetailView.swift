@@ -17,7 +17,14 @@ struct CritterBuildDetailView: View {
                     CritterBuildCard(record: record)
                     MiniCueComparison(newText: "Newest: \(record.cue.rawValue)", previousText: CritterBuildEngine.comparisonCopy(newCue: record.cue, previous: store.records.dropFirst().first))
                     VStack(alignment: .leading, spacing: 8) {
-                        Text("Build note").font(.headline)
+                        Text("Build card").font(.headline)
+                        Text("Color tags: \(record.colorTags)")
+                        Text("Size tags: \(record.sizeTags)")
+                        Text("Shape tags: \(record.shapeTags)")
+                        Text("Head: \(record.headIdea)")
+                        Text("Body: \(record.bodyIdea)")
+                        Text("Tail: \(record.tailIdea)")
+                        Text("Feet: \(record.feetIdea)")
                         Text(record.careNote.isEmpty ? "No extra note saved." : record.careNote)
                     }
                     HStack {

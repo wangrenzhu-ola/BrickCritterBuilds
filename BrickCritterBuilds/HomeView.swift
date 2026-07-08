@@ -51,7 +51,7 @@ private struct EmptyCritterBuildView: View {
     var body: some View {
         VStack(alignment: .leading, spacing: 14) {
             Text("Start your first Critter Build.").font(.title2.bold())
-            Text("Log a critter build, piece tags, and one saved build card. BrickCritter will render Buildable, Tweak, or Rebuild without making LEGO affiliation or live database claims.")
+            Text("Select 5–8 color, size, and shape brick tags, then save a head/body/tail/feet build card. BrickCritter will render Buildable, Tweak, or Rebuild without making LEGO affiliation or live database claims.")
             MiniCueComparison(newText: "No saved cue yet", previousText: "Comparison appears after your first save")
             Button("Create Critter Build", action: create).buttonStyle(.borderedProminent)
         }

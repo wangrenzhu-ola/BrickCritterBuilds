@@ -1,6 +1,1 @@
-{
-  "xcode_runtime": "launched_on_booted_simulator",
-  "bundle_identifier": "com.brickcritter.builds",
-  "screenshot_ref": "/Users/wangrenzhu/work/BrickCritterBuilds/evidence/brickcritter_launch.png",
-  "runtime_blocker": "none"
-}
+{"xcode_runtime":"launched_on_booted_simulator","bundle_identifier":"com.brickcritter.builds","app_path":"/Users/wangrenzhu/Library/Developer/Xcode/DerivedData/BrickCritterBuilds-dapwqbjwcmutcceobdagblcbiivl/Build/Products/Debug-iphonesimulator/BrickCritterBuilds.app","screenshot_ref":"/Users/wangrenzhu/work/BrickCritterBuilds/evidence/brickcritter_launch.png","install_launch_log_ref":"/Users/wangrenzhu/work/BrickCritterBuilds/evidence/simulator_install_launch.log","runtime_blocker":"none","product_regrounding_note":"Fresh screenshot after CritterBuild source rename and 5-8 tag/head-body-tail-feet patch."}

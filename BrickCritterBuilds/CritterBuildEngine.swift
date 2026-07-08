@@ -5,7 +5,7 @@ struct CritterBuildEngine {
         guard draft.readingMode == .tested else {
             return (.watch, "No build test was logged today, so keep the critter build visible and test the stance before saving.", "D9911A", comparisonCopy(newCue: .watch, previous: previous))
         }
-        if draft.smallBricks >= 8 || draft.hingePieces <= 1 || draft.oddPieces >= 8 || draft.observation == .needsCharacter {
+        if draft.colorTags.trimmingCharacters(in: .whitespacesAndNewlines).isEmpty || draft.sizeTags.trimmingCharacters(in: .whitespacesAndNewlines).isEmpty || draft.shapeTags.trimmingCharacters(in: .whitespacesAndNewlines).isEmpty || draft.smallBricks >= 8 || draft.hingePieces <= 1 || draft.oddPieces >= 8 || draft.observation == .needsCharacter {
             return (.intervene, "The critter build is outside the stable stance band; adjust piece tags before saving.", "D9534F", comparisonCopy(newCue: .intervene, previous: previous))
         }
         if draft.smallBricks >= 7 || draft.observation == .needsWiderFeet || draft.observation == .headFallsForward || draft.observation == .tailMissing {
@@ -21,6 +21,6 @@ struct CritterBuildEngine {
     }
 
     static func aiFallbackNote(for draft: CritterBuildDraft) -> String {
-        "Manual cue: \(draft.observation.rawValue.lowercased()) in a \(draft.critterStyle.rawValue.lowercased()). Keep this note editable; no AI route or save happens without your confirmation."
+        "Manual cue: \(draft.colorTags), \(draft.sizeTags), and \(draft.shapeTags) become \(draft.headIdea), \(draft.bodyIdea), \(draft.tailIdea), and \(draft.feetIdea). Keep this editable; no AI route or save happens without your confirmation."
     }
 }
