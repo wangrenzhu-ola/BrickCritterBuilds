@@ -1,0 +1,24 @@
+{
+  "identifier" : "com.brickcritter.flavortheater.storekit.local",
+  "nonRenewingSubscriptions" : [],
+  "products" : [
+    {
+      "displayPrice" : "2.99",
+      "familyShareable" : false,
+      "internalID" : "brickcritter-premium-unlock",
+      "localizations" : [
+        {
+          "description" : "Unlock multiple local drinks, longer Critter Build history, export, and extra miniature stage themes. The first one-drink loop remains free.",
+          "displayName" : "BrickCritter Premium",
+          "locale" : "en_US"
+        }
+      ],
+      "productID" : "com.brickcritter.flavortheater.premium.unlock",
+      "referenceName" : "BrickCritter Premium Unlock",
+      "type" : "NonConsumable"
+    }
+  ],
+  "settings" : { "_failTransactionsEnabled" : true, "_locale" : "en_US", "_storefront" : "USA" },
+  "subscriptionGroups" : [],
+  "version" : { "major" : 4, "minor" : 0 }
+}

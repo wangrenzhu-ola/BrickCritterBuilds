@@ -1,0 +1,161 @@
+{
+  "schema_version": "appfactory.package_goal_summary.v1",
+  "app_name": "BrickCritter Builds",
+  "worker_status": "patchback_round3_pending_finalgate",
+  "applied_skill_ids": [
+    "build-ios-apps",
+    "test-xcode",
+    "swiftui-ui-patterns",
+    "swiftui-view-refactor",
+    "taste-skill",
+    "ios-iap-implementation",
+    "ios-iap-acceptance",
+    "ios-privacy-implementation",
+    "ios-compliance-acceptance",
+    "ios_runtime_acceptance",
+    "ios-app-intents"
+  ],
+  "package_goal_map_ref": "/Users/wangrenzhu/.local/state/app-factory-command-center/agent_gateway/jobs/pm-doc-manual-20260707T154737Z-5docs/PMAgent/product_goal_bundles/goal-002-brickcritter-flavor-theater/package_goal_map.md",
+  "repo_path": "/Users/wangrenzhu/work/BrickCritterBuilds",
+  "repo_url": "https://github.com/wangrenzhu-ola/BrickCritterBuilds",
+  "github_public_repo_url": "https://github.com/wangrenzhu-ola/BrickCritterBuilds",
+  "xcodeproj_ref": "/Users/wangrenzhu/work/BrickCritterBuilds/BrickCritterBuilds.xcodeproj",
+  "commit_refs": [
+    "4e1c2309442abaded7390c0ac71311f279287c1d Patch BrickCritter FinalGate cycle metadata",
+    "a13597f24b0bf80eaa20f939f1f53445242c6bfd Patchback BrickCritter identity and persistence runtime evidence",
+    "5fc48a0ba503bbf411e6b283c23d69582972c439 Patch BrickCritter product identity copy",
+    "cb9e563d1364317970098f1b04439d494f0d74f5 Patchback BrickCritter FinalGate evidence contract",
+    "b3bcda0b79c2991cb39285ab5b9e9fddb29ee974 Record BrickCritter public repo URL",
+    "7e5f7d8e1c4dda44e1609e015e3fe1f719ca78a7 Add BrickCritter build runtime delivery evidence",
+    "8303477bdf18dbd62a7d4a56d2fe5c8d86f8f890 Fix BrickCritter bundle identifier",
+    "8455df46056530e8c71b7ea8c63a5a1c2bcf563a Fix BrickCritter studio visual component",
+    "8b3e4effe42a7ea29b725f1edf26e176aef428f3 Fix BrickCritter visual stage references",
+    "c077f54514f0f3622e948ee1e272bbd96d176a82 Add BrickCritter flavor cue model",
+    "fdc3cbcd857d1429d04e2fc682292e4dc9b1d4aa Fix BrickCritter domain project references",
+    "5394e1f741e3286ce68f262d2cc532a9f43cb96a Build BrickCritter Builds SwiftUI app"
+  ],
+  "build_ios_apps_evidence_refs": [
+    "/Users/wangrenzhu/work/BrickCritterBuilds/evidence/source_shape_readback.json",
+    "/Users/wangrenzhu/work/BrickCritterBuilds/evidence/xcodebuild_build.log"
+  ],
+  "test_xcode_evidence_refs": [
+    "/Users/wangrenzhu/work/BrickCritterBuilds/evidence/xcodebuild_test.log",
+    "/Users/wangrenzhu/work/BrickCritterBuilds/evidence/simulator_install_launch.log",
+    "/Users/wangrenzhu/work/BrickCritterBuilds/evidence/brickcritter_launch.png",
+    "/Users/wangrenzhu/work/BrickCritterBuilds/evidence/brickcritter_persistence_readback.png"
+  ],
+  "xcode_runtime_result_ref": "/Users/wangrenzhu/work/BrickCritterBuilds/evidence/xcode_runtime_report.json",
+  "iap_evidence_refs": [
+    "/Users/wangrenzhu/work/BrickCritterBuilds/evidence/ios_iap_acceptance.json"
+  ],
+  "compliance_evidence_refs": [
+    "/Users/wangrenzhu/work/BrickCritterBuilds/evidence/ios_compliance_acceptance.json"
+  ],
+  "implemented_with_real_interaction": true,
+  "persistence_implemented": true,
+  "sample_data_only": false,
+  "static_ui_only": false,
+  "known_gaps": [],
+  "blockers": [],
+  "build_artifact_ref": "/Users/wangrenzhu/work/codex-goal-runs/codex-5app-production-20260708-095109/artifacts/app_2_brickcritter/BrickCritterBuilds-source-delivery.zip",
+  "artifact_sha256": "0ae397d517427ee677f73c0024204db6de1f1964c619204058102291d56662cd",
+  "ultraqa_report_ref": "/Users/wangrenzhu/work/BrickCritterBuilds/evidence/ultraqa_report.json",
+  "ultraqa_status": "PASS",
+  "scenario_matrix_ref": "/Users/wangrenzhu/work/BrickCritterBuilds/evidence/scenario_matrix.json",
+  "fresh_runtime_evidence_refs": [
+    "/Users/wangrenzhu/work/BrickCritterBuilds/evidence/simulator_install_launch.log",
+    "/Users/wangrenzhu/work/BrickCritterBuilds/evidence/brickcritter_launch.png",
+    "/Users/wangrenzhu/work/BrickCritterBuilds/evidence/brickcritter_persistence_readback.png"
+  ],
+  "local_git_readback_ref": "/Users/wangrenzhu/work/BrickCritterBuilds/evidence/local_git_readback.json",
+  "visual_asset_evidence_refs": [
+    "/Users/wangrenzhu/work/BrickCritterBuilds/evidence/visual_asset_evidence.json",
+    "/Users/wangrenzhu/work/BrickCritterBuilds/evidence/brickcritter_launch.png",
+    "/Users/wangrenzhu/work/BrickCritterBuilds/evidence/brickcritter_persistence_readback.png"
+  ],
+  "visual_runtime_evidence_refs": [
+    "/Users/wangrenzhu/work/BrickCritterBuilds/evidence/brickcritter_launch.png",
+    "/Users/wangrenzhu/work/BrickCritterBuilds/evidence/brickcritter_persistence_readback.png"
+  ],
+  "implemented_requirement_ids": [
+    "REQ-CRUD-001",
+    "REQ-PERSIST-001",
+    "REQ-VIS-001",
+    "REQ-EMPTY-001",
+    "REQ-ERROR-001",
+    "REQ-PRIVACY-001",
+    "REQ-PREMIUM-001",
+    "REQ-AI-001",
+    "REQ-APPINTENT-001"
+  ],
+  "unresolved_requirement_ids": [],
+  "requirement_evidence": {
+    "REQ-CRUD-001": [
+      "/Users/wangrenzhu/work/BrickCritterBuilds/evidence/scenario_matrix.json"
+    ],
+    "REQ-PERSIST-001": [
+      "/Users/wangrenzhu/work/BrickCritterBuilds/evidence/scenario_matrix.json"
+    ],
+    "REQ-VIS-001": [
+      "/Users/wangrenzhu/work/BrickCritterBuilds/evidence/scenario_matrix.json"
+    ],
+    "REQ-EMPTY-001": [
+      "/Users/wangrenzhu/work/BrickCritterBuilds/evidence/scenario_matrix.json"
+    ],
+    "REQ-ERROR-001": [
+      "/Users/wangrenzhu/work/BrickCritterBuilds/evidence/scenario_matrix.json"
+    ],
+    "REQ-PRIVACY-001": [
+      "/Users/wangrenzhu/work/BrickCritterBuilds/evidence/scenario_matrix.json"
+    ],
+    "REQ-PREMIUM-001": [
+      "/Users/wangrenzhu/work/BrickCritterBuilds/evidence/scenario_matrix.json"
+    ],
+    "REQ-AI-001": [
+      "/Users/wangrenzhu/work/BrickCritterBuilds/evidence/scenario_matrix.json"
+    ],
+    "REQ-APPINTENT-001": [
+      "/Users/wangrenzhu/work/BrickCritterBuilds/evidence/scenario_matrix.json"
+    ]
+  },
+  "requirement_runtime_evidence": {
+    "REQ-CRUD-001": [
+      "/Users/wangrenzhu/work/BrickCritterBuilds/evidence/xcodebuild_test.log"
+    ],
+    "REQ-PERSIST-001": [
+      "/Users/wangrenzhu/work/BrickCritterBuilds/evidence/brickcritter_persistence_readback.png",
+      "/Users/wangrenzhu/work/BrickCritterBuilds/evidence/simulator_install_launch.log"
+    ],
+    "REQ-VIS-001": [
+      "/Users/wangrenzhu/work/BrickCritterBuilds/evidence/brickcritter_launch.png"
+    ],
+    "REQ-EMPTY-001": [
+      "/Users/wangrenzhu/work/BrickCritterBuilds/evidence/brickcritter_launch.png"
+    ]
+  },
+  "ios_app_intents_evidence_refs": [
+    "/Users/wangrenzhu/work/BrickCritterBuilds/evidence/ios_app_intents_acceptance.json"
+  ],
+  "product_goal_bundle_ref": "/Users/wangrenzhu/.local/state/app-factory-command-center/agent_gateway/jobs/pm-doc-manual-20260707T154737Z-5docs/PMAgent/product_goal_bundles/goal-002-brickcritter-flavor-theater",
+  "contract_consumption_report_ref": "/Users/wangrenzhu/work/BrickCritterBuilds/goal_consumption_report.json",
+  "final_gate_run_count": 4,
+  "patchback_diff_review_refs": [
+    "/Users/wangrenzhu/work/BrickCritterBuilds/evidence/patchback_diff_review_round_2.json"
+  ],
+  "patchback_rounds": [
+    "/Users/wangrenzhu/work/BrickCritterBuilds/evidence/patchback_diff_review_round_2.json"
+  ],
+  "source_branch": "main",
+  "branch": "main",
+  "source_commit": "4e1c2309442abaded7390c0ac71311f279287c1d",
+  "release_commit": "4e1c2309442abaded7390c0ac71311f279287c1d",
+  "local_git_head": "4e1c2309442abaded7390c0ac71311f279287c1d",
+  "persistence_evidence_refs": [
+    "/Users/wangrenzhu/work/BrickCritterBuilds/BrickCritterBuilds/CritterBuildStore.swift",
+    "/Users/wangrenzhu/work/BrickCritterBuilds/evidence/brickcritter_persistence_readback.png",
+    "/Users/wangrenzhu/work/BrickCritterBuilds/evidence/simulator_install_launch.log"
+  ],
+  "patchback_cycles": [
+    "/Users/wangrenzhu/work/BrickCritterBuilds/evidence/patchback_cycle_round_3.json"
+  ]
+}
