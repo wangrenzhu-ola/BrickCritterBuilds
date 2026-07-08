@@ -1,5 +1,5 @@
 {
-  "identifier" : "com.brickcritter.flavortheater.storekit.local",
+  "identifier" : "com.brickcritter.builds.storekit.local",
   "nonRenewingSubscriptions" : [],
   "products" : [
     {
@@ -13,7 +13,7 @@
           "locale" : "en_US"
         }
       ],
-      "productID" : "com.brickcritter.flavortheater.premium.unlock",
+      "productID" : "com.brickcritter.builds.premium.unlock",
       "referenceName" : "BrickCritter Premium Unlock",
       "type" : "NonConsumable"
     }

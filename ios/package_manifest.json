@@ -2,7 +2,7 @@
   "app_name": "BrickCritter Builds",
   "platform": "iOS native SwiftUI",
   "xcodeproj": "BrickCritterBuilds.xcodeproj",
-  "bundle_id": "com.brickcritter.flavortheater",
+  "bundle_id": "com.brickcritter.builds",
   "storekit_config": "BrickCritterBuilds/StoreKit/BrickCritterBuilds.storekit",
   "privacy_manifest": "BrickCritterBuilds/PrivacyInfo.xcprivacy"
 }

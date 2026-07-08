@@ -4,7 +4,7 @@ import Combine
 
 @MainActor
 final class PremiumStore: ObservableObject {
-    static let premiumProductID = "com.brickcritter.flavortheater.premium.unlock"
+    static let premiumProductID = "com.brickcritter.builds.premium.unlock"
 
     @Published var products: [Product] = []
     @Published var isPremiumUnlocked: Bool { didSet { UserDefaults.standard.set(isPremiumUnlocked, forKey: premiumKey) } }
