@@ -49,7 +49,7 @@ private struct ExportSheet: View {
             VStack(alignment: .leading, spacing: 16) {
                 Text("Local export preview").font(.title2.bold())
                 Text(text).padding().background(.thinMaterial, in: RoundedRectangle(cornerRadius: 18))
-                Text("Premium unlocks longer history export. This preview never uploads data.").font(.footnote).foregroundStyle(.secondary)
+                Text("Premium unlocks extra shelf slots export. This preview never uploads data.").font(.footnote).foregroundStyle(.secondary)
                 Spacer()
             }
             .padding()

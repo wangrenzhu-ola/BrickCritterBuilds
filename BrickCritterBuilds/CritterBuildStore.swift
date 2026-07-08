@@ -54,7 +54,7 @@ final class CritterBuildStore: ObservableObject {
             careNote: incoming.careNote,
             cue: evaluation.cue,
             cueReason: evaluation.reason,
-            buildCueHex: evaluation.flavorHex,
+            buildCueHex: evaluation.cueHex,
             createdAt: records.first(where: { $0.id == incoming.id })?.createdAt ?? now,
             updatedAt: now
         )
@@ -77,9 +77,9 @@ final class CritterBuildStore: ObservableObject {
     }
 
     private func load() {
-        if let data = try? Data(contentsOf: recordsURL), let decoded = try? JSONDecoder.flavorTheater.decode([CritterBuildRecord].self, from: data) { records = decoded.sorted { $0.updatedAt > $1.updatedAt } }
-        if let data = UserDefaults.standard.data(forKey: draftKey), let decoded = try? JSONDecoder.flavorTheater.decode(CritterBuildDraft.self, from: data) { draft = decoded }
-        if let data = UserDefaults.standard.data(forKey: privacyKey), let decoded = try? JSONDecoder.flavorTheater.decode(PrivacyChoice.self, from: data) { privacyChoice = decoded }
+        if let data = try? Data(contentsOf: recordsURL), let decoded = try? JSONDecoder.brickCritter.decode([CritterBuildRecord].self, from: data) { records = decoded.sorted { $0.updatedAt > $1.updatedAt } }
+        if let data = UserDefaults.standard.data(forKey: draftKey), let decoded = try? JSONDecoder.brickCritter.decode(CritterBuildDraft.self, from: data) { draft = decoded }
+        if let data = UserDefaults.standard.data(forKey: privacyKey), let decoded = try? JSONDecoder.brickCritter.decode(PrivacyChoice.self, from: data) { privacyChoice = decoded }
         if let pending = UserDefaults.standard.string(forKey: "pendingCritterBuildTitle"), !pending.isEmpty {
             draft.title = pending
             UserDefaults.standard.removeObject(forKey: "pendingCritterBuildTitle")
@@ -87,16 +87,16 @@ final class CritterBuildStore: ObservableObject {
     }
 
     private func persistRecords() throws {
-        let data = try JSONEncoder.flavorTheater.encode(records)
+        let data = try JSONEncoder.brickCritter.encode(records)
         try data.write(to: recordsURL, options: [.atomic])
     }
 
     private func persistDraft() {
-        if let data = try? JSONEncoder.flavorTheater.encode(draft) { UserDefaults.standard.set(data, forKey: draftKey) }
+        if let data = try? JSONEncoder.brickCritter.encode(draft) { UserDefaults.standard.set(data, forKey: draftKey) }
     }
 
     private func persistPrivacy() {
-        if let data = try? JSONEncoder.flavorTheater.encode(privacyChoice) { UserDefaults.standard.set(data, forKey: privacyKey) }
+        if let data = try? JSONEncoder.brickCritter.encode(privacyChoice) { UserDefaults.standard.set(data, forKey: privacyKey) }
     }
 }
 
@@ -107,9 +107,9 @@ struct PrivacyChoice: Codable, Hashable {
 }
 
 extension JSONEncoder {
-    static var flavorTheater: JSONEncoder { let encoder = JSONEncoder(); encoder.dateEncodingStrategy = .iso8601; return encoder }
+    static var brickCritter: JSONEncoder { let encoder = JSONEncoder(); encoder.dateEncodingStrategy = .iso8601; return encoder }
 }
 
 extension JSONDecoder {
-    static var flavorTheater: JSONDecoder { let decoder = JSONDecoder(); decoder.dateDecodingStrategy = .iso8601; return decoder }
+    static var brickCritter: JSONDecoder { let decoder = JSONDecoder(); decoder.dateDecodingStrategy = .iso8601; return decoder }
 }

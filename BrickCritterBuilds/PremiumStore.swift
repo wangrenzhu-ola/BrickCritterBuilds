@@ -36,7 +36,7 @@ final class PremiumStore: ObservableObject {
                 if case .verified(let transaction) = verification {
                     isPremiumUnlocked = true
                     await transaction.finish()
-                    storeKitMessage = "Premium unlocked. Multiple drinks, export, history, and stage themes are now available."
+                    storeKitMessage = "Premium unlocked. Multiple shelf slots, local critter packs, export, and shelf themes are now available."
                 } else {
                     storeKitMessage = "Purchase could not be verified; no Critter Build data was changed."
                 }

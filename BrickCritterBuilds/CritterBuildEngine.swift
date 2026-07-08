@@ -1,17 +1,17 @@
 import Foundation
 
 struct CritterBuildEngine {
-    static func evaluate(_ draft: CritterBuildDraft, previous: CritterBuildRecord?) -> (cue: BuildCue, reason: String, flavorHex: String, comparison: String) {
+    static func evaluate(_ draft: CritterBuildDraft, previous: CritterBuildRecord?) -> (cue: BuildCue, reason: String, cueHex: String, comparison: String) {
         guard draft.readingMode == .tested else {
-            return (.watch, "No tasting pass was logged today, so keep the critter build visible and retaste before serving.", "D9911A", comparisonCopy(newCue: .watch, previous: previous))
+            return (.watch, "No build test was logged today, so keep the critter build visible and test the stance before saving.", "D9911A", comparisonCopy(newCue: .watch, previous: previous))
         }
         if draft.smallBricks >= 8 || draft.hingePieces <= 1 || draft.oddPieces >= 8 || draft.observation == .needsCharacter {
-            return (.intervene, "One flavor balance is outside the hosting-safe band; adjust the next pour and avoid health claims.", "D9534F", comparisonCopy(newCue: .intervene, previous: previous))
+            return (.intervene, "The critter build is outside the stable stance band; adjust piece tags before saving.", "D9534F", comparisonCopy(newCue: .intervene, previous: previous))
         }
         if draft.smallBricks >= 7 || draft.observation == .needsWiderFeet || draft.observation == .headFallsForward || draft.observation == .tailMissing {
-            return (.watch, "The drink is usable, but this note deserves a small adjustment before the next guest pour.", "D9911A", comparisonCopy(newCue: .watch, previous: previous))
+            return (.watch, "The critter can stand, but this build deserves a small stance or character adjustment before saving.", "D9911A", comparisonCopy(newCue: .watch, previous: previous))
         }
-        return (.stable, "Build notes and guest reaction line up with a balanced zero-proof moment.", "2FA872", comparisonCopy(newCue: .stable, previous: previous))
+        return (.stable, "Piece tags and posture notes line up with a balanced critter build.", "2FA872", comparisonCopy(newCue: .stable, previous: previous))
     }
 
     static func comparisonCopy(newCue: BuildCue, previous: CritterBuildRecord?) -> String {

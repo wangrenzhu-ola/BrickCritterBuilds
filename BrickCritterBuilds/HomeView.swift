@@ -9,7 +9,7 @@ struct HomeView: View {
         ScrollView {
             VStack(alignment: .leading, spacing: 22) {
                 HeroCritterStyle(cue: store.records.first?.cue ?? .watch, title: "BrickCritter", subtitle: store.latestComparison)
-                    .accessibilityLabel("Miniature critter build with flavor cue color and saved Critter Build comparison")
+                    .accessibilityLabel("Miniature critter build with build cue color and saved Critter Build comparison")
 
                 if store.records.isEmpty {
                     EmptyCritterBuildView(create: startCritterBuild)

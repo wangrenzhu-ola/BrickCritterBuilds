@@ -18,8 +18,11 @@
   "repo_path": "/Users/wangrenzhu/work/BrickCritterBuilds",
   "xcodeproj_ref": "/Users/wangrenzhu/work/BrickCritterBuilds/BrickCritterBuilds.xcodeproj",
   "commit_refs": [
-    "d2687e08eb2b7f8275a5fb36f5bc3b95c40a8113 Fix BrickCritter bundle identifier",
-    "c12dece5486340c7ce5b4cc144e9398dc192068f Build BrickCritter Builds SwiftUI app"
+    "42ad1a5 Record RealAcceptance v2 repo-ready evidence",
+    "21f07bf Record BrickCritter public repo URL",
+    "7d94a25 Add BrickCritter build runtime evidence",
+    "d2687e0 Fix BrickCritter bundle identifier",
+    "c12dece Build BrickCritter Builds SwiftUI app"
   ],
   "build_ios_apps_evidence_refs": [
     "/Users/wangrenzhu/work/BrickCritterBuilds/evidence/xcodebuild_build.log"
@@ -45,5 +48,6 @@
   "github_public_repo_url": "https://github.com/wangrenzhu-ola/BrickCritterBuilds",
   "real_acceptance_report_ref": "/Users/wangrenzhu/work/BrickCritterBuilds/evidence/real_acceptance_report.json",
   "real_acceptance_status": "repo_ready_for_business_patch",
-  "finalgate_required_by_current_amendment": false
+  "finalgate_required_by_current_amendment": false,
+  "source_regrounding_note": "Renamed cloned FlavorScene source/test files to CritterBuild names and removed ZeroProof/flavor/drink/guest residue from user-visible copy before RealAcceptance."
 }

@@ -22,15 +22,15 @@ struct CritterBuildStudioView: View {
                 TextField("Critter Build name", text: $draft.title)
                     .textInputAutocapitalization(.words)
                     .accessibilityLabel("Critter Build name")
-                Picker("Flavor scene style", selection: $draft.critterStyle) {
+                Picker("Critter style", selection: $draft.critterStyle) {
                     ForEach(CritterStyle.allCases) { Text($0.rawValue).tag($0) }
                 }
                 CritterBuildGlass(stage: draft.critterStyle, cue: previewCue)
                     .frame(height: 150)
                     .accessibilityLabel("Miniature critter build preview")
             }
-            Section("Flavor cue") {
-                Picker("Tasting mode", selection: $draft.readingMode) {
+            Section("Build cue") {
+                Picker("Build test mode", selection: $draft.readingMode) {
                     ForEach(ReadingMode.allCases) { Text($0.rawValue).tag($0) }
                 }.pickerStyle(.segmented)
                 if draft.readingMode == .tested {
@@ -38,10 +38,10 @@ struct CritterBuildStudioView: View {
                     Stepper("Hinge pieces: \(draft.hingePieces, specifier: "%.0f")", value: $draft.hingePieces, in: 0...10, step: 1)
                     Stepper("Odd pieces: \(draft.oddPieces, specifier: "%.0f")", value: $draft.oddPieces, in: 0...10, step: 1)
                 } else {
-                    Text("Manual not-tasted state keeps the Critter Build usable and reminds you to retaste before serving.")
+                    Text("Manual not-built-yet state keeps the Critter Build editable and reminds you to test the creature stance before saving.")
                 }
             }
-            Section("Living-scene observation") {
+            Section("Critter posture observation") {
                 Picker("Observation", selection: $draft.observation) {
                     ForEach(ObservationType.allCases) { Text($0.rawValue).tag($0) }
                 }

@@ -53,7 +53,7 @@ struct CritterBuildCard: View {
             HStack { Text(record.title).font(.headline); Spacer(); CueBadge(cue: record.cue) }
             Text(record.cueReason).font(.subheadline).foregroundStyle(.secondary)
             HStack {
-                Label(record.critterStyle.rawValue, systemImage: "wineglass")
+                Label(record.critterStyle.rawValue, systemImage: "pawprint")
                 Label(record.observation.rawValue, systemImage: "eye")
             }.font(.caption).foregroundStyle(.secondary)
         }
@@ -93,7 +93,7 @@ struct PremiumPreviewCard: View {
     var body: some View {
         VStack(alignment: .leading, spacing: 10) {
             HStack { Text("Premium stage themes").font(.headline); Spacer(); Text(isUnlocked ? "Unlocked" : "Additive") }
-            Text("Multiple drinks, longer history, export, and extra stage themes unlock after the free first loop.")
+            Text("Local critter packs, extra shelf slots, export, and shelf themes unlock after the free first loop.")
             Button(isUnlocked ? "Review Premium" : "View Premium", action: openPaywall)
         }
         .padding()

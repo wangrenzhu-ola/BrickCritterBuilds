@@ -14,7 +14,7 @@ struct SettingsPrivacyView: View {
             }
             Section("Premium boundary") {
                 LabeledContent("Premium unlocked", value: premium.isPremiumUnlocked ? "Yes" : "No")
-                Text("The first one flavor Critter Build loop is never paywalled. Premium only adds local hosting boards, longer history, export, and themes.")
+                Text("The first Critter Build loop is never paywalled. Premium only adds local critter packs, extra shelf slots, export, and themes.")
             }
             Section("Data controls") {
                 Text("Critter Builds, drafts, privacy choices, and entitlement flags are stored on this device. Delete controls are available on each Critter Build detail.")
@@ -34,7 +34,7 @@ struct PrivacyBoundaryView: View {
                 Text("Manual rules fully deliver v0. Optional note cleanup is Kimi-ready for a future user-supplied route, but this app contains no API keys and never saves AI text automatically.")
             }
             Section("Review notes") {
-                Text("BrickCritter does not provide health advice, sobriety claims, live bartender service, or public guest publishing.")
+                Text("BrickCritter does not claim LEGO affiliation, live brick recognition, a public community feed, or automatic build guarantees.")
             }
         }
         .navigationTitle("Privacy / AI")

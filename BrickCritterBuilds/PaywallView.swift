@@ -8,7 +8,7 @@ struct PaywallView: View {
         ScrollView {
             VStack(alignment: .leading, spacing: 18) {
                 Text("Premium Critter Shelf").font(.largeTitle.bold())
-                Text("Unlock local hosting boards, longer local history, export, and extra stage themes. Your first core Critter Build remains free.")
+                Text("Unlock local critter packs, longer local history, export, and extra stage themes. Your first core Critter Build remains free.")
                 PremiumFeatureGrid()
                 Text(premium.storeKitMessage).font(.callout).foregroundStyle(.secondary)
                 if let restoreFailure = premium.restoreFailureNote { ErrorBanner(message: restoreFailure) { Task { await premium.restorePurchases() } } }

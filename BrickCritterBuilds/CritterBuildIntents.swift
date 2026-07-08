@@ -19,6 +19,6 @@ struct DraftCritterBuildIntent: AppIntent {
 
 struct BrickCritterShortcuts: AppShortcutsProvider {
     static var appShortcuts: [AppShortcut] {
-        AppShortcut(intent: DraftCritterBuildIntent(), phrases: ["Draft a \(.applicationName) critter build"], shortTitle: "Draft Critter Build", systemImageName: "wineglass")
+        AppShortcut(intent: DraftCritterBuildIntent(), phrases: ["Draft a \(.applicationName) critter build"], shortTitle: "Draft Critter Build", systemImageName: "pawprint")
     }
 }
